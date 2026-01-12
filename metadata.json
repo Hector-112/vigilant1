@@ -1,0 +1,8 @@
+{
+  "name": "Vigilant - Modern Expiry Guard",
+  "description": "A high-performance, modern minimalist product expiry tracker with smart AI categorization and haptic feedback.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

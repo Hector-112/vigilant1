@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigilant | Modern Expiry Guard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              slate: {
+                850: '#1e293b',
+                950: '#0f172a'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+            background: #fafaf9;
+            color: #1a1a1a;
+            overflow-x: hidden;
+            line-height: 1.5;
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dark body {
+            background: #0f172a;
+            color: #f8fafc;
+        }
+        
+        .modern-card {
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .dark .modern-card {
+            background: #1e293b;
+            border-color: rgba(255,255,255,0.05);
+        }
+        
+        .modern-card:hover {
+            box-shadow: 0 10px 20px -5px rgba(0,0,0,0.04);
+            transform: translateY(-2px);
+        }
+
+        .btn-press {
+            transition: transform 0.1s ease;
+        }
+        
+        .btn-press:active {
+            transform: scale(0.96);
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e5e5e0;
+            border-radius: 10px;
+        }
+
+        .dark ::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
+        
+        .page-fade-in {
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .uppercase {
+            letter-spacing: 0.08em;
+            font-weight: 800;
+        }
+
+        .sidebar-modern {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .dark .sidebar-modern {
+            background: rgba(15, 23, 42, 0.8);
+            border-right-color: rgba(255,255,255,0.1);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "recharts": "https://esm.sh/recharts@2.15.0?external=react,react-dom",
+    "@google/genai": "https://esm.sh/@google/genai@1.3.0",
+    "firebase/app": "https://esm.sh/firebase@11.2.0/app",
+    "firebase/firestore": "https://esm.sh/firebase@11.2.0/firestore",
+    "firebase/auth": "https://esm.sh/firebase@11.2.0/auth",
+    "react-dom/": "https://esm.sh/react-dom@19.0.0/",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "firebase/": "https://esm.sh/firebase@11.2.0/",
+    "emailjs-com": "https://esm.sh/emailjs-com@^3.2.0"
+  }
+}
+</script>
+</head>
+<body class="transition-colors duration-300">
+    <div id="root"></div>
+</body>
+</html>
